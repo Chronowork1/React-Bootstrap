@@ -5,12 +5,14 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './Components/Home';
 import About from './Components/About';
 import News from './Components/News';
+import Navbar from './Components/CustomNavBar';
 
 class App extends React.Component {
   render() {
     return (
       <Router>
         <div>
+          
           {/*Set router back home*/}
           <Route exact path = "/" component={Home} />
           {/*Set to about page*/}

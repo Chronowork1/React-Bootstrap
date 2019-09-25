@@ -13,6 +13,19 @@ export default class CustomNavbar extends React.Component {
                     <Navbar.Toggle/>
                 </Navbar.header>
                 <Navbar.Collapse>
+                    {/* */}
+                    <Nav pullRight>
+                        {/*Unique key for each nav item, href and to is to link*/}
+                        <NavItem eventKey = {1} componentClass = {Link} href="/" to= "/">
+                            Home
+                        </NavItem>
+                        <NavItem eventKey = {2} componentClass = {Link} to= "/about">
+                            About
+                        </NavItem>
+                        <NavItem eventKey = {3} componentClass = {Link} to= "/news">
+                            News
+                        </NavItem>
+                    </Nav>
                 </Navbar.Collapse>
             </Navbar>
         )
